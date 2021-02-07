@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #eee;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar  a{
+    color: #333315;
+    font-weight: bold;
+}
+.container{
+    margin: auto;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.meal-result{
+    margin-top: 4rem;
+}
+#meal{
+    margin: 2.4rem 0;
+}
+.meal-details{
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    padding: 2rem;
+    overflow-y: scroll;
+}
+.meal-details-content{
+    margin: 2rem;
+    border:2px solid gray;
+    background: white;
+    box-shadow: 10px 20px 40px gray;
+    border-radius: 10px;
+   
+}
+#meals {
+   max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+
+.card {
+    cursor: pointer;
+}
+
+
+.card img {
+    width: 200px;
+}
+.card:hover{
+    color: #eee;
+}
